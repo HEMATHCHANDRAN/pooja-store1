@@ -1,0 +1,176 @@
+.App {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2c3e50 !important;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+/* Billing Styles */
+.billing-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.item-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-color: #4e73df;
+}
+
+.item-card-img {
+  height: 120px;
+  object-fit: cover;
+  background: #f8f9fa;
+}
+
+.item-card-body {
+  padding: 12px;
+}
+
+.item-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #2c3e50;
+}
+
+.item-card-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 8px;
+}
+
+/* Cart Styles */
+.cart-container {
+  position: sticky;
+  top: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 20px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.cart-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-left: 4px solid #4e73df;
+}
+
+.cart-item-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cart-item-qty {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+/* Home Page */
+.home-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.billing-option-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.billing-option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  border-color: #4e73df;
+}
+
+.billing-option-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #4e73df;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .billing-container {
+    padding: 15px;
+  }
+  
+  .cart-container {
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+  }
+}
+/* Add hover zoom effect for item images */
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Custom scrollbar for cart */
+.cart-container ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-container ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cart-container ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.cart-container ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
