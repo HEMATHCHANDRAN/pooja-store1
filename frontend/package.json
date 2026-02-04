@@ -38,3 +38,17 @@
     ]
   }
 }
+
+{
+  "scripts": {
+    "build": "CI=false react-scripts build",
+    "start": "CI=false react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"],
+    "rules": {
+      "no-unused-vars": "warn",
+      "react-hooks/exhaustive-deps": "warn"
+    }
+  }
+}
